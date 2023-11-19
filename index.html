@@ -20,6 +20,7 @@
   <!-- 
     - google font link
   -->
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -58,21 +59,19 @@
               <a href="#about" class="nav-link">What we do</a>
             </li>
 
-            <li class="nav-item">
-              <a href="#features" class="nav-link">Why us?</a>
-            </li>
+
 
             <li class="nav-item">
               <a href="#" class="nav-link">Our work</a>
             </li>
 
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="/form.html" class="nav-link">Contact</a>
             </li>
 
           </ul>
 
-          <button class="btn btn-primary"><a href="form.html" class="nav-link">Get in touch</a></button>
+          <button class="btn btn-primary" id="getInTouchBtn">Get in touch</button>
 
         </nav>
 
@@ -104,7 +103,7 @@
             <p class="hero-text">
               Gensou.in specializes in web development, game design, and software solutions.</p>
 
-              <button class="btn btn-primary"><a href="form.html" class="nav-link" style="color: white;">Get started</a></button>
+              <button class="btn btn-primary" id="getInTouchBtn1">Get started</button>
 
 
           </div>
@@ -160,7 +159,7 @@
                 <div class="about-card">
 
                   <div class="card-icon">
-                    <ion-icon name="chatbubbles-outline"></ion-icon>
+                    <ion-icon name="game-controller-outline"></ion-icon>
                   </div>
 
                   <h3 class="h3 card-title">Short text for game development and solutions</h3>
@@ -209,7 +208,8 @@
                 Our team is here to assist you with any updates, enhancements, or technical issues that may arise.
               </p>
 
-              <button class="btn btn-secondary">Sign Up For Free</button>
+              <button class="btn btn-secondary" id="getInTouchBtn2">Sign Up For Free</button>
+              
 
             </div>
 
@@ -220,91 +220,19 @@
 
 
 
-
-
-      <!-- 
-        - #FEATURES
-      -->
-
-      <section class="features" id="features">
-        <div class="container">
-
-          <h2 class="h2 section-title">Our team is made up of all different backgrounds from all over the world.</h2>
-
-          <p class="section-text">
-            Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
-            development of
-            the asset through its charitable foundation.
-          </p>
-
-          <ul class="features-list">
-
-            <li class="features-item">
-
-              <figure class="features-item-banner">
-                <img src="./assets/images/feature-1.png" alt="feature banner">
-              </figure>
-
-              <div class="feature-item-content">
-                <h3 class="h2 item-title">Cover your everyday expenses</h3>
-
-                <p class="item-text">
-                  Inspiration comes in many ways and you like to save everything from. sed do eiusmod tempor incididunt
-                  ut labore et
-                  dolore magna aliqua.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="features-item">
-
-              <figure class="features-item-banner">
-                <img src="./assets/images/feature-2.png" alt="feature banner">
-              </figure>
-
-              <div class="feature-item-content">
-                <h3 class="h2 item-title">We offer low fees that are transparent</h3>
-
-                <p class="item-text">
-                  Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back into the
-                  development of
-                  the asset through its charitable foundation.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #CTA
-      -->
-
       <section class="cta">
         <div class="container">
 
           <div class="cta-card">
 
-            <h3 class="cta-title">Try for 7 days free</h3>
+            <h3 class="cta-title">Get your first website in Free</h3>
 
             <p class="cta-text">
-              Each time a digital asset is purchased or sold, Sequoir donates a percentage of the fees back.
-            </p>
+              Embark on your online journey with a professionally designed website at no cost! Our service provides a unique opportunity for individuals and businesses to establish their online presence without breaking the bank  </p>
 
-            <form action="" class="cta-form">
-
-              <input type="email" name="email" placeholder="Your email address">
-
-              <button type="submit" class="btn btn-secondary">Try It Now</button>
-
+              <form action="" class="cta-form" id="myForm">
+                <input type="email" name="email" id="email" placeholder="Your email address">
+                <button type="button" class="btn btn-secondary" onclick="submitForm()">Try It Now</button>
             </form>
 
           </div>
@@ -320,51 +248,7 @@
         - #CONTACT
       -->
 
-      <section class="contact" id="contact">
-        <div class="container">
-
-          <div class="contact-content">
-            <h2 class="h2 contact-title">Let’s scale your brand, together</h2>
-
-            <figure class="contact-banner">
-              <img src="./assets/images/contact.png" alt="contact banner">
-            </figure>
-          </div>
-
-          <form action="" class="contact-form">
-
-            <div class="input-wrapper">
-              <label for="name" class="input-label">Name *</label>
-
-              <input type="text" name="name" id="name" required placeholder="Type Name" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="phone" class="input-label">Phone</label>
-
-              <input type="tel" name="phone" id="phone" placeholder="Type Phone Number" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="email" class="input-label">Email Address *</label>
-
-              <input type="email" name="email" id="email" required placeholder="Type Email Address" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="message" class="input-label">How can we help? *</label>
-
-              <textarea name="message" id="message" placeholder="Type Description" required
-                class="input-field"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Send Message</button>
-
-          </form>
-
-        </div>
-      </section>
-
+      
     </article>
 
   </main>

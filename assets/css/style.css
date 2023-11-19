@@ -285,17 +285,7 @@ header .container {
   color: #273679;
 }
 
-a:link {
-  color: inherit; /* Use the default link color */
-}
 
-a:visited {
-  color: inherit; /* Use the default visited link color */
-}
-
-a:active {
-  color: inherit; /* Use the default active link color */
-}
 
 
 /*-----------------------------------*\ 
